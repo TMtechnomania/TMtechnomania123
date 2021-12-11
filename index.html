@@ -25,6 +25,10 @@
   padding: 0px;
 }
 
+.slideshow-container:hover .overlay {
+  opacity: 1;
+}
+
 img{
     margin: 0px;
     padding: 0px;
@@ -138,6 +142,23 @@ a {
   from {opacity: .4}
   to {opacity: 1}
 }
+
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background-image: linear-gradient(to right, #389ae0, #31D9F7);
+  border-radius: 0px 0px 8px 8px;
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 4px;
+  text-align: center;
+}
+
 </style>
 
 <body>
@@ -147,22 +168,33 @@ a {
 
     <!-- Full-width images with number and caption text -->
     <div class="mySlides fade">
-      <a href="https://www.epicgames.com/store/en-US/p/godfall--challenger-edition" target="_blank"><img src="https://cdn1.epicgames.com/offer/b6b2ef0cc19a4adaaa1cf6c7ed000dfa/EGS_GodfallChallengerEdition_CounterplayGames_Editions_S1_2560x1440-2541e6e7783e8a65817c51c0ad856c19_2560x1440-2541e6e7783e8a65817c51c0ad856c19?h=480&resize=1&w=854"></a>
+      <a href="https://www.epicgames.com/store/en-US/p/godfall--challenger-edition" target="_blank">
+        <div class="overlay">Godfall: Free</div>
+        <img src="https://cdn1.epicgames.com/offer/b6b2ef0cc19a4adaaa1cf6c7ed000dfa/EGS_GodfallChallengerEdition_CounterplayGames_Editions_S1_2560x1440-2541e6e7783e8a65817c51c0ad856c19_2560x1440-2541e6e7783e8a65817c51c0ad856c19?h=480&resize=1&w=854"></a>
     </div>
   
     <div class="mySlides fade">
-      <a href="https://www.epicgames.com/store/en-US/p/prison-architect" target="_blank"><img src="https://cdn1.epicgames.com/offer/3ffb410dab2d409aacd39a1abc6fcbba/EGS_PrisonArchitect_DoubleEleven_S1_2560x1440-032995cc5b2eefb8ce2b7b3b446a76ce?h=480&resize=1&w=854"></a>
+      
+      <a href="https://www.epicgames.com/store/en-US/p/prison-architect" target="_blank">
+        <div class="overlay">Prison Architect: Free</div>
+        <img src="https://cdn1.epicgames.com/offer/3ffb410dab2d409aacd39a1abc6fcbba/EGS_PrisonArchitect_DoubleEleven_S1_2560x1440-032995cc5b2eefb8ce2b7b3b446a76ce?h=480&resize=1&w=854"></a>
     </div>
   
     <div class="mySlides fade">
-      <a href="https://www.epicgames.com/store/en-US/p/genshin-impact" target="_blank"><img src="https://cdn2.unrealengine.com/egs-genshin-impact-winter-update-desktop-1248x702-1248x702-4043daed3da9.png"></a>
+      
+      <a href="https://www.epicgames.com/store/en-US/p/genshin-impact" target="_blank">
+        <div class="overlay">Genshin-Impact: Free</div>
+        <img src="https://cdn2.unrealengine.com/egs-genshin-impact-winter-update-desktop-1248x702-1248x702-4043daed3da9.png"></a>
       
     </div>
 
     <div class="mySlides fade">
-        <a href="https://www.epicgames.com/store/en-US/p/rocket-league" target="_blank"><img src="https://cdn2.unrealengine.com/egs-rocketleague-psyonixllc-g1a-07-1920x1080-6f8971cc67fc.jpg"></a>
+      
+      <a href="https://www.epicgames.com/store/en-US/p/rocket-league" target="_blank">
+        <div class="overlay">Pocket League: Free</div>
+        <img src="https://cdn2.unrealengine.com/egs-rocketleague-psyonixllc-g1a-07-1920x1080-6f8971cc67fc.jpg"></a>
         
-      </div>
+    </div>
   
     <!-- Next and previous buttons -->
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
