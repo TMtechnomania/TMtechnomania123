@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: auto;
+    width: 300px;
+    aspect-ratio: 1/2;
+    background-color: #E9E8EF;
+    overflow: hidden;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    font-family: 'Poppins', sans-serif;
+    color: #1E202C;
+}
+
+.header{
+    aspect-ratio: 5;
+    background-color: transparent;
+    text-align: center;
+}
+
+.container{
+    background-color: #fff;
+    width: 100%;
+    height: auto;
+}
+
+.xr{
+    width: 90%;
+    aspect-ratio: 5;
+    height: auto;
+}
+
+.2xr{
+    width: 90%;
+    height: auto;
+    aspect-ratio: 2.5;
+}
